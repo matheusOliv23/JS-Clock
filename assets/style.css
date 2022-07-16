@@ -1,3 +1,7 @@
+:root {
+    --primary: #2e94e3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 
 html {
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 0.675rem;
     color: #efefef;
@@ -31,8 +35,8 @@ body {
     width: 30rem;
     height: 30rem;
     border-radius: 50%;
-    border: 20px solid white;
-    margin: 50px auto;
+    border: 1.25rem solid white;
+    margin: 3.125rem auto;
     position: relative;
     padding: 2rem;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2)
@@ -59,10 +63,9 @@ body {
 
 .datetime {
     background: #10101e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* width: 21.25rem; */
     padding: 1rem 0.625rem;
-    border: 3px solid #2e94e3;
+    border: 3px solid var(--primary);
     border-radius: 5px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
     transition: 0.5s;
@@ -70,8 +73,8 @@ body {
 }
 
 .datetime:hover {
-    background: #2e94e3;
-    box-shadow: 0 0 30px #2e94e3;
+    background: var(--primary);
+    box-shadow: 0 0 1.875rem var(--primary);
 }
 
 .time {
@@ -89,11 +92,18 @@ body {
 }
 
 .time span:last-child {
-    background-color: #2e94e3;
+    background-color: var(--primary);
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0.675rem;
     padding: 0 5px;
     border-radius: 3px;
+}
+
+.date {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0.625rem;
+    border-bottom: 3px solid var(--primary);
 }
