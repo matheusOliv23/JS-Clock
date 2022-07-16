@@ -10,15 +10,43 @@
     <title>JS Clock</title>
 </head>
 
-<body>
+<body onload="playClock()">
 
-    <div class="clock">
-        <div class="clock-face">
-            <div class="pointer hour-pointer"></div>
-            <div class="pointer min-pointer"></div>
-            <div class="pointer sec-pointer"></div>
+    <div class="container">
+
+        <div class="clock">
+            <div class="clock-face">
+                <div class="pointer hour-pointer"></div>
+                <div class="pointer min-pointer"></div>
+                <div class="pointer sec-pointer"></div>
+            </div>
         </div>
+
+        <div class="datetime">
+
+            <div>
+                <span id="dayName">01</span>
+                <span id="dayNumber">01</span>
+                <span>de</span>
+                <span id="months">01</span>
+                <span>de</span>
+                <span id="year">01</span>
+            </div>
+
+            <div class="time">
+                <span id="hour">01</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+
+        </div>
+
     </div>
+
+
 
     <script src="./assets/main.js"></script>
 </body>
